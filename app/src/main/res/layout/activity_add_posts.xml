@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".AddPostsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_btn"
+            android:layout_margin="10dp"
+            android:id="@+id/back_add_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Post"  android:layout_gravity="center_vertical"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+ <RelativeLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="225dp"
+     android:layout_margin="10dp"
+     android:layout_below="@id/top"
+     android:background="@drawable/edit_text"
+     android:id="@+id/topPanel">
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/post_image_add_frag"
+        />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Click to add Post"
+         android:textColor="@color/colorAccent"
+         android:layout_centerInParent="true"
+         android:id="@+id/notification"/>
+
+
+ </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+android:id="@+id/mid_panel"
+        android:layout_below="@id/topPanel"
+ >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/profile"
+            android:layout_margin="5dp"
+            android:id="@+id/appPost_profileImage"/> 
+        <EditText
+            android:layout_width="280dp"
+            android:maxLength="50"
+            android:maxLines="3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_text"
+            android:hint="Say something ..."
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/post_description"/>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_save_black_24dp"
+        android:id="@+id/AddPost_Button"/>
+
+</RelativeLayout>

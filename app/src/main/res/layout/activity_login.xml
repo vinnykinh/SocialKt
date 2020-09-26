@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SocialKt App"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login User"
+        android:layout_marginTop="200dp"
+        android:id="@+id/loginSubject"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginSubject">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:hint="Email"
+            android:id="@+id/loginEmail"/>
+        <EditText
+            android:layout_width="300dp"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_https_black_24dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/loginPassword"/>
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/loginButton"
+        android:text="Login"
+        android:background="@drawable/login_button"
+        android:textColor="#ffff"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/createLink_btn"
+        android:background="@drawable/create_link"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:textAllCaps="false"
+        android:text="Need an Account? Create Account"/>
+
+
+</RelativeLayout>
